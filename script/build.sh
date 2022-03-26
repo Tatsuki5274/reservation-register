@@ -6,4 +6,3 @@ pushd lambda/hello/
   npx esbuild *.ts --platform=node --sourcemap --bundle --outdir=build
 popd
 
-cdk deploy
