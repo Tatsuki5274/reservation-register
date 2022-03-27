@@ -3,6 +3,6 @@ set -eux
 
 pushd lambda/hello/
   npm i
-  npx esbuild *.ts --platform=node --sourcemap --bundle --outdir=build
+  npx esbuild *.ts --platform=node --sourcemap --bundle --outdir=build --minify
 popd
 
