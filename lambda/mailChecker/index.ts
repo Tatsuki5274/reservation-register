@@ -1,11 +1,10 @@
 import * as AWS from "aws-sdk";
 import { env } from "process";
-// import * as Imap from "imap";
-const Imap = require("imap");
+import Connection = require("imap");
 import * as Util from "util";
 const inspect = Util.inspect;
 
-var imap = new Imap({
+var imap = new Connection({
   user: "mygmailname@gmail.com",
   password: "mygmailpassword",
   host: "imap.gmail.com",
@@ -47,7 +46,7 @@ const getImapConnection = async () => {
   //   port: 993,
   //   tls: true,
   // });
-  // return imap;
+  return imap;
 };
 
 export const handler = async () => {
