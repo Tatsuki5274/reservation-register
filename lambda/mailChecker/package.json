@@ -9,6 +9,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "aws-sdk": "^2.1101.0"
+    "aws-sdk": "^2.1101.0",
+    "imap": "^0.8.19",
+    "install": "^0.13.0",
+    "npm": "^8.5.5"
+  },
+  "devDependencies": {
+    "@types/imap": "^0.8.35"
   }
 }
