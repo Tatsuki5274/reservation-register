@@ -15,11 +15,11 @@ export class DmmEikaiwa3Stack extends Stack {
 
     const secret = new aws_secretsmanager.Secret(this, "Secret");
 
-    const sampleFunc = new aws_lambda.Function(this, "NaiveLambda", {
+    const sampleFunc = new aws_lambda.Function(this, "MailChecker", {
       runtime: aws_lambda.Runtime.NODEJS_14_X,
       handler: "index.handler",
       code: aws_lambda.Code.fromAsset(
-        path.join(__dirname, "../lambda/hello/build/")
+        path.join(__dirname, "../lambda/mailChecker/build/")
       ),
       timeout: Duration.seconds(30),
       environment: {
